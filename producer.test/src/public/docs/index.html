@@ -220,11 +220,11 @@ window.onload = function() {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost:8089/docs/sint" \
+    -G "http://localhost:8089/docs/tempora" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8089/docs/sint"
+    "http://localhost:8089/docs/tempora"
 );
 
 let headers = {
@@ -240,410 +240,410 @@ fetch(url, {
 <p>Example response (404):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "Unable to generate documentation file to: \"\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/storage\/api-docs\/sint\". Please make sure directory is writable. Error: Required @OA\\PathItem() not found",
+    "message": "Unable to generate documentation file to: \"\/var\/www\/html\/storage\/api-docs\/tempora\". Please make sure directory is writable. Error: Required @OA\\PathItem() not found",
     "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Application.php",
+    "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Application.php",
     "line": 1068,
     "trace": [
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/helpers.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/helpers.php",
             "line": 44,
             "function": "abort",
             "class": "Illuminate\\Foundation\\Application",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/darkaonline\/l5-swagger\/src\/Http\/Controllers\/SwaggerController.php",
+            "file": "\/var\/www\/html\/vendor\/darkaonline\/l5-swagger\/src\/Http\/Controllers\/SwaggerController.php",
             "line": 69,
             "function": "abort"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
             "line": 54,
             "function": "docs",
             "class": "L5Swagger\\Http\\Controllers\\SwaggerController",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
             "line": 45,
             "function": "callAction",
             "class": "Illuminate\\Routing\\Controller",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
             "line": 255,
             "function": "dispatch",
             "class": "Illuminate\\Routing\\ControllerDispatcher",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
             "line": 197,
             "function": "runController",
             "class": "Illuminate\\Routing\\Route",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
             "line": 691,
             "function": "run",
             "class": "Illuminate\\Routing\\Route",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 128,
             "function": "Illuminate\\Routing\\{closure}",
             "class": "Illuminate\\Routing\\Router",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/darkaonline\/l5-swagger\/src\/Http\/Middleware\/Config.php",
+            "file": "\/var\/www\/html\/vendor\/darkaonline\/l5-swagger\/src\/Http\/Middleware\/Config.php",
             "line": 42,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "L5Swagger\\Http\\Middleware\\Config",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 103,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
             "line": 693,
             "function": "then",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
             "line": 668,
             "function": "runRouteWithinStack",
             "class": "Illuminate\\Routing\\Router",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
             "line": 634,
             "function": "runRoute",
             "class": "Illuminate\\Routing\\Router",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
             "line": 623,
             "function": "dispatchToRoute",
             "class": "Illuminate\\Routing\\Router",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
             "line": 166,
             "function": "dispatch",
             "class": "Illuminate\\Routing\\Router",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 128,
             "function": "Illuminate\\Foundation\\Http\\{closure}",
             "class": "Illuminate\\Foundation\\Http\\Kernel",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/fruitcake\/laravel-cors\/src\/HandleCors.php",
+            "file": "\/var\/www\/html\/vendor\/fruitcake\/laravel-cors\/src\/HandleCors.php",
             "line": 37,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Fruitcake\\Cors\\HandleCors",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
             "line": 21,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
             "line": 21,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
             "line": 27,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/PreventRequestsDuringMaintenance.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/PreventRequestsDuringMaintenance.php",
             "line": 87,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/fruitcake\/laravel-cors\/src\/HandleCors.php",
+            "file": "\/var\/www\/html\/vendor\/fruitcake\/laravel-cors\/src\/HandleCors.php",
             "line": 37,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Fruitcake\\Cors\\HandleCors",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
+            "file": "\/var\/www\/html\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
             "line": 57,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Fideloper\\Proxy\\TrustProxies",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 103,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
             "line": 141,
             "function": "then",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
             "line": 110,
             "function": "sendRequestThroughRouter",
             "class": "Illuminate\\Foundation\\Http\\Kernel",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
             "line": 323,
             "function": "handle",
             "class": "Illuminate\\Foundation\\Http\\Kernel",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
             "line": 305,
             "function": "callLaravelOrLumenRoute",
             "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
             "line": 76,
             "function": "makeApiCall",
             "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
             "line": 51,
             "function": "makeResponseCall",
             "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
             "line": 41,
             "function": "makeResponseCallIfEnabledAndNoSuccessResponses",
             "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
             "line": 235,
             "function": "__invoke",
             "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
             "line": 171,
             "function": "iterateThroughStrategies",
             "class": "Knuckles\\Scribe\\Extracting\\Generator",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
             "line": 126,
             "function": "fetchResponses",
             "class": "Knuckles\\Scribe\\Extracting\\Generator",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Commands\/GenerateDocumentation.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Commands\/GenerateDocumentation.php",
             "line": 118,
             "function": "processRoute",
             "class": "Knuckles\\Scribe\\Extracting\\Generator",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Commands\/GenerateDocumentation.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Commands\/GenerateDocumentation.php",
             "line": 73,
             "function": "processRoutes",
             "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
             "line": 36,
             "function": "handle",
             "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Util.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Util.php",
             "line": 40,
             "function": "Illuminate\\Container\\{closure}",
             "class": "Illuminate\\Container\\BoundMethod",
             "type": "::"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
             "line": 93,
             "function": "unwrapIfClosure",
             "class": "Illuminate\\Container\\Util",
             "type": "::"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
             "line": 37,
             "function": "callBoundMethod",
             "class": "Illuminate\\Container\\BoundMethod",
             "type": "::"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
             "line": 596,
             "function": "call",
             "class": "Illuminate\\Container\\BoundMethod",
             "type": "::"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
             "line": 136,
             "function": "call",
             "class": "Illuminate\\Container\\Container",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Command\/Command.php",
+            "file": "\/var\/www\/html\/vendor\/symfony\/console\/Command\/Command.php",
             "line": 258,
             "function": "execute",
             "class": "Illuminate\\Console\\Command",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
             "line": 121,
             "function": "run",
             "class": "Symfony\\Component\\Console\\Command\\Command",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Application.php",
+            "file": "\/var\/www\/html\/vendor\/symfony\/console\/Application.php",
             "line": 920,
             "function": "run",
             "class": "Illuminate\\Console\\Command",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Application.php",
+            "file": "\/var\/www\/html\/vendor\/symfony\/console\/Application.php",
             "line": 266,
             "function": "doRunCommand",
             "class": "Symfony\\Component\\Console\\Application",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Application.php",
+            "file": "\/var\/www\/html\/vendor\/symfony\/console\/Application.php",
             "line": 142,
             "function": "doRun",
             "class": "Symfony\\Component\\Console\\Application",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
             "line": 93,
             "function": "run",
             "class": "Symfony\\Component\\Console\\Application",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
             "line": 129,
             "function": "run",
             "class": "Illuminate\\Console\\Application",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/artisan",
+            "file": "\/var\/www\/html\/artisan",
             "line": 37,
             "function": "handle",
             "class": "Illuminate\\Foundation\\Console\\Kernel",
@@ -682,11 +682,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost:8089/docs/asset/placeat" \
+    -G "http://localhost:8089/docs/asset/enim" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8089/docs/asset/placeat"
+    "http://localhost:8089/docs/asset/enim"
 );
 
 let headers = {
@@ -702,410 +702,410 @@ fetch(url, {
 <p>Example response (404):</p>
 </blockquote>
 <pre><code class="language-json">{
-    "message": "(placeat) - this L5 Swagger asset is not allowed",
+    "message": "(enim) - this L5 Swagger asset is not allowed",
     "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Application.php",
+    "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Application.php",
     "line": 1068,
     "trace": [
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/helpers.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/helpers.php",
             "line": 44,
             "function": "abort",
             "class": "Illuminate\\Foundation\\Application",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/darkaonline\/l5-swagger\/src\/Http\/Controllers\/SwaggerAssetController.php",
+            "file": "\/var\/www\/html\/vendor\/darkaonline\/l5-swagger\/src\/Http\/Controllers\/SwaggerAssetController.php",
             "line": 31,
             "function": "abort"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
             "line": 54,
             "function": "index",
             "class": "L5Swagger\\Http\\Controllers\\SwaggerAssetController",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
             "line": 45,
             "function": "callAction",
             "class": "Illuminate\\Routing\\Controller",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
             "line": 255,
             "function": "dispatch",
             "class": "Illuminate\\Routing\\ControllerDispatcher",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
             "line": 197,
             "function": "runController",
             "class": "Illuminate\\Routing\\Route",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
             "line": 691,
             "function": "run",
             "class": "Illuminate\\Routing\\Route",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 128,
             "function": "Illuminate\\Routing\\{closure}",
             "class": "Illuminate\\Routing\\Router",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/darkaonline\/l5-swagger\/src\/Http\/Middleware\/Config.php",
+            "file": "\/var\/www\/html\/vendor\/darkaonline\/l5-swagger\/src\/Http\/Middleware\/Config.php",
             "line": 42,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "L5Swagger\\Http\\Middleware\\Config",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 103,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
             "line": 693,
             "function": "then",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
             "line": 668,
             "function": "runRouteWithinStack",
             "class": "Illuminate\\Routing\\Router",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
             "line": 634,
             "function": "runRoute",
             "class": "Illuminate\\Routing\\Router",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
             "line": 623,
             "function": "dispatchToRoute",
             "class": "Illuminate\\Routing\\Router",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
             "line": 166,
             "function": "dispatch",
             "class": "Illuminate\\Routing\\Router",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 128,
             "function": "Illuminate\\Foundation\\Http\\{closure}",
             "class": "Illuminate\\Foundation\\Http\\Kernel",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/fruitcake\/laravel-cors\/src\/HandleCors.php",
+            "file": "\/var\/www\/html\/vendor\/fruitcake\/laravel-cors\/src\/HandleCors.php",
             "line": 37,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Fruitcake\\Cors\\HandleCors",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
             "line": 21,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
             "line": 21,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
             "line": 27,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/PreventRequestsDuringMaintenance.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/PreventRequestsDuringMaintenance.php",
             "line": 87,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/fruitcake\/laravel-cors\/src\/HandleCors.php",
+            "file": "\/var\/www\/html\/vendor\/fruitcake\/laravel-cors\/src\/HandleCors.php",
             "line": 37,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Fruitcake\\Cors\\HandleCors",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
+            "file": "\/var\/www\/html\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
             "line": 57,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 167,
             "function": "handle",
             "class": "Fideloper\\Proxy\\TrustProxies",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
             "line": 103,
             "function": "Illuminate\\Pipeline\\{closure}",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
             "line": 141,
             "function": "then",
             "class": "Illuminate\\Pipeline\\Pipeline",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
             "line": 110,
             "function": "sendRequestThroughRouter",
             "class": "Illuminate\\Foundation\\Http\\Kernel",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
             "line": 323,
             "function": "handle",
             "class": "Illuminate\\Foundation\\Http\\Kernel",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
             "line": 305,
             "function": "callLaravelOrLumenRoute",
             "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
             "line": 76,
             "function": "makeApiCall",
             "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
             "line": 51,
             "function": "makeResponseCall",
             "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
             "line": 41,
             "function": "makeResponseCallIfEnabledAndNoSuccessResponses",
             "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
             "line": 235,
             "function": "__invoke",
             "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
             "line": 171,
             "function": "iterateThroughStrategies",
             "class": "Knuckles\\Scribe\\Extracting\\Generator",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
             "line": 126,
             "function": "fetchResponses",
             "class": "Knuckles\\Scribe\\Extracting\\Generator",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Commands\/GenerateDocumentation.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Commands\/GenerateDocumentation.php",
             "line": 118,
             "function": "processRoute",
             "class": "Knuckles\\Scribe\\Extracting\\Generator",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Commands\/GenerateDocumentation.php",
+            "file": "\/var\/www\/html\/vendor\/knuckleswtf\/scribe\/src\/Commands\/GenerateDocumentation.php",
             "line": 73,
             "function": "processRoutes",
             "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
             "line": 36,
             "function": "handle",
             "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Util.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Util.php",
             "line": 40,
             "function": "Illuminate\\Container\\{closure}",
             "class": "Illuminate\\Container\\BoundMethod",
             "type": "::"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
             "line": 93,
             "function": "unwrapIfClosure",
             "class": "Illuminate\\Container\\Util",
             "type": "::"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
             "line": 37,
             "function": "callBoundMethod",
             "class": "Illuminate\\Container\\BoundMethod",
             "type": "::"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
             "line": 596,
             "function": "call",
             "class": "Illuminate\\Container\\BoundMethod",
             "type": "::"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
             "line": 136,
             "function": "call",
             "class": "Illuminate\\Container\\Container",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Command\/Command.php",
+            "file": "\/var\/www\/html\/vendor\/symfony\/console\/Command\/Command.php",
             "line": 258,
             "function": "execute",
             "class": "Illuminate\\Console\\Command",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
             "line": 121,
             "function": "run",
             "class": "Symfony\\Component\\Console\\Command\\Command",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Application.php",
+            "file": "\/var\/www\/html\/vendor\/symfony\/console\/Application.php",
             "line": 920,
             "function": "run",
             "class": "Illuminate\\Console\\Command",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Application.php",
+            "file": "\/var\/www\/html\/vendor\/symfony\/console\/Application.php",
             "line": 266,
             "function": "doRunCommand",
             "class": "Symfony\\Component\\Console\\Application",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Application.php",
+            "file": "\/var\/www\/html\/vendor\/symfony\/console\/Application.php",
             "line": 142,
             "function": "doRun",
             "class": "Symfony\\Component\\Console\\Application",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
             "line": 93,
             "function": "run",
             "class": "Symfony\\Component\\Console\\Application",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
+            "file": "\/var\/www\/html\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
             "line": 129,
             "function": "run",
             "class": "Illuminate\\Console\\Application",
             "type": "-&gt;"
         },
         {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/artisan",
+            "file": "\/var\/www\/html\/artisan",
             "line": 37,
             "function": "handle",
             "class": "Illuminate\\Foundation\\Console\\Kernel",
@@ -1396,7 +1396,7 @@ fetch(url, {
                     &lt;/div&gt;
 
                     &lt;div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0"&gt;
-                        Laravel v8.13.0 (PHP v7.3.11)
+                        Laravel v8.13.0 (PHP v7.4.12)
                     &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
@@ -1447,506 +1447,178 @@ fetch(url, {
     headers,
 }).then(response =&gt; response.json());</code></pre>
 <blockquote>
-<p>Example response (500):</p>
+<p>Example response (200):</p>
 </blockquote>
-<pre><code class="language-json">{
-    "message": "SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known (SQL: select * from `products`)",
-    "exception": "Illuminate\\Database\\QueryException",
-    "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
-    "line": 671,
-    "trace": [
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
-            "line": 631,
-            "function": "runQueryCallback",
-            "class": "Illuminate\\Database\\Connection",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
-            "line": 339,
-            "function": "run",
-            "class": "Illuminate\\Database\\Connection",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
-            "line": 2303,
-            "function": "select",
-            "class": "Illuminate\\Database\\Connection",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
-            "line": 2291,
-            "function": "runSelect",
-            "class": "Illuminate\\Database\\Query\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
-            "line": 2786,
-            "function": "Illuminate\\Database\\Query\\{closure}",
-            "class": "Illuminate\\Database\\Query\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
-            "line": 2292,
-            "function": "onceWithColumns",
-            "class": "Illuminate\\Database\\Query\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
-            "line": 549,
-            "function": "get",
-            "class": "Illuminate\\Database\\Query\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
-            "line": 533,
-            "function": "getModels",
-            "class": "Illuminate\\Database\\Eloquent\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Model.php",
-            "line": 476,
-            "function": "get",
-            "class": "Illuminate\\Database\\Eloquent\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/app\/Http\/Controllers\/Api\/ProductController.php",
-            "line": 24,
-            "function": "all",
-            "class": "Illuminate\\Database\\Eloquent\\Model",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
-            "line": 54,
-            "function": "index",
-            "class": "App\\Http\\Controllers\\Api\\ProductController",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
-            "line": 45,
-            "function": "callAction",
-            "class": "Illuminate\\Routing\\Controller",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
-            "line": 255,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\ControllerDispatcher",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
-            "line": 197,
-            "function": "runController",
-            "class": "Illuminate\\Routing\\Route",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 691,
-            "function": "run",
-            "class": "Illuminate\\Routing\\Route",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 128,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/SubstituteBindings.php",
-            "line": 41,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 127,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 103,
-            "function": "handleRequest",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 55,
-            "function": "handleRequestUsingNamedLimiter",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 103,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 693,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 668,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 634,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 623,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 166,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 128,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/fruitcake\/laravel-cors\/src\/HandleCors.php",
-            "line": 57,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Fruitcake\\Cors\\HandleCors",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 21,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 21,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/PreventRequestsDuringMaintenance.php",
-            "line": 87,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/fruitcake\/laravel-cors\/src\/HandleCors.php",
-            "line": 57,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Fruitcake\\Cors\\HandleCors",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 103,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 141,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 110,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
-            "line": 323,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
-            "line": 305,
-            "function": "callLaravelOrLumenRoute",
-            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
-            "line": 76,
-            "function": "makeApiCall",
-            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
-            "line": 51,
-            "function": "makeResponseCall",
-            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
-            "line": 41,
-            "function": "makeResponseCallIfEnabledAndNoSuccessResponses",
-            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
-            "line": 235,
-            "function": "__invoke",
-            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
-            "line": 171,
-            "function": "iterateThroughStrategies",
-            "class": "Knuckles\\Scribe\\Extracting\\Generator",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
-            "line": 126,
-            "function": "fetchResponses",
-            "class": "Knuckles\\Scribe\\Extracting\\Generator",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Commands\/GenerateDocumentation.php",
-            "line": 118,
-            "function": "processRoute",
-            "class": "Knuckles\\Scribe\\Extracting\\Generator",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Commands\/GenerateDocumentation.php",
-            "line": 73,
-            "function": "processRoutes",
-            "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 36,
-            "function": "handle",
-            "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Util.php",
-            "line": 40,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 93,
-            "function": "unwrapIfClosure",
-            "class": "Illuminate\\Container\\Util",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 37,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 596,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 136,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 258,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 121,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Application.php",
-            "line": 920,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Application.php",
-            "line": 266,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Application.php",
-            "line": 142,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 93,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 129,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "-&gt;"
-        }
-    ]
-}</code></pre>
+<pre><code class="language-json">[
+    {
+        "id": 1,
+        "title": "Woodrow Padberg",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/006644?text=sapiente",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 2,
+        "title": "Rosario Dibbert",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/002255?text=laborum",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 3,
+        "title": "Broderick Herzog",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/0088bb?text=aliquam",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 4,
+        "title": "Ms. Alexanne Botsford V",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/009966?text=incidunt",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 5,
+        "title": "Jacynthe Tremblay",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/0044bb?text=enim",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 6,
+        "title": "Glen Olson",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/00ee66?text=nihil",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 7,
+        "title": "Dr. River Barton",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/005577?text=qui",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 8,
+        "title": "Ms. Lia McGlynn",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/005566?text=in",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 9,
+        "title": "Ms. Donna Klein",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/001188?text=aliquam",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 10,
+        "title": "Cara Moore",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/00cc44?text=et",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 11,
+        "title": "Dr. Alexandra Kub DDS",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/006611?text=mollitia",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 12,
+        "title": "Mr. Chet Pouros Jr.",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/00bbee?text=id",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 13,
+        "title": "Mauricio Senger",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/0022dd?text=repellendus",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 14,
+        "title": "Gust Volkman IV",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/00ffaa?text=perferendis",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 15,
+        "title": "Mr. Toy Leffler",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/00dd44?text=exercitationem",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 16,
+        "title": "Prof. Elwyn Prohaska",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/007700?text=commodi",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 17,
+        "title": "Mrs. Eunice Bogan",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/007733?text=reiciendis",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 18,
+        "title": "D'angelo Walker",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/0077bb?text=voluptatem",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 19,
+        "title": "Ms. Leonora Wiegand",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/0022cc?text=ipsa",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 20,
+        "title": "Renee Tremblay",
+        "image": "https:\/\/via.placeholder.com\/640x480.png\/002288?text=voluptatem",
+        "likes": 0,
+        "created_at": "2020-11-07T11:04:18.000000Z",
+        "updated_at": "2020-11-07T11:04:18.000000Z"
+    },
+    {
+        "id": 21,
+        "title": "deneme 2255678",
+        "image": "deneme 2255678",
+        "likes": 0,
+        "created_at": "2020-11-07T11:17:08.000000Z",
+        "updated_at": "2020-11-07T11:17:08.000000Z"
+    }
+]</code></pre>
 <div id="execution-results-GETapi-products" hidden>
     <blockquote>Received response<span id="execution-response-status-GETapi-products"></span>:</blockquote>
     <pre class="json"><code id="execution-response-content-GETapi-products"></code></pre>
@@ -2013,11 +1685,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "http://localhost:8089/api/products/occaecati" \
+    -G "http://localhost:8089/api/products/maxime" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8089/api/products/occaecati"
+    "http://localhost:8089/api/products/maxime"
 );
 
 let headers = {
@@ -2029,535 +1701,6 @@ fetch(url, {
     method: "GET",
     headers,
 }).then(response =&gt; response.json());</code></pre>
-<blockquote>
-<p>Example response (500):</p>
-</blockquote>
-<pre><code class="language-json">{
-    "message": "SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known (SQL: select * from `products` where `products`.`id` = occaecati limit 1)",
-    "exception": "Illuminate\\Database\\QueryException",
-    "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
-    "line": 671,
-    "trace": [
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
-            "line": 631,
-            "function": "runQueryCallback",
-            "class": "Illuminate\\Database\\Connection",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connection.php",
-            "line": 339,
-            "function": "run",
-            "class": "Illuminate\\Database\\Connection",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
-            "line": 2303,
-            "function": "select",
-            "class": "Illuminate\\Database\\Connection",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
-            "line": 2291,
-            "function": "runSelect",
-            "class": "Illuminate\\Database\\Query\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
-            "line": 2786,
-            "function": "Illuminate\\Database\\Query\\{closure}",
-            "class": "Illuminate\\Database\\Query\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Query\/Builder.php",
-            "line": 2292,
-            "function": "onceWithColumns",
-            "class": "Illuminate\\Database\\Query\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
-            "line": 549,
-            "function": "get",
-            "class": "Illuminate\\Database\\Query\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
-            "line": 533,
-            "function": "getModels",
-            "class": "Illuminate\\Database\\Eloquent\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Concerns\/BuildsQueries.php",
-            "line": 147,
-            "function": "get",
-            "class": "Illuminate\\Database\\Eloquent\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Builder.php",
-            "line": 355,
-            "function": "first",
-            "class": "Illuminate\\Database\\Eloquent\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Support\/Traits\/ForwardsCalls.php",
-            "line": 23,
-            "function": "find",
-            "class": "Illuminate\\Database\\Eloquent\\Builder",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Model.php",
-            "line": 1884,
-            "function": "forwardCallTo",
-            "class": "Illuminate\\Database\\Eloquent\\Model",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Eloquent\/Model.php",
-            "line": 1896,
-            "function": "__call",
-            "class": "Illuminate\\Database\\Eloquent\\Model",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/app\/Http\/Controllers\/Api\/ProductController.php",
-            "line": 32,
-            "function": "__callStatic",
-            "class": "Illuminate\\Database\\Eloquent\\Model",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php",
-            "line": 54,
-            "function": "show",
-            "class": "App\\Http\\Controllers\\Api\\ProductController",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php",
-            "line": 45,
-            "function": "callAction",
-            "class": "Illuminate\\Routing\\Controller",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
-            "line": 255,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\ControllerDispatcher",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php",
-            "line": 197,
-            "function": "runController",
-            "class": "Illuminate\\Routing\\Route",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 691,
-            "function": "run",
-            "class": "Illuminate\\Routing\\Route",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 128,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/SubstituteBindings.php",
-            "line": 41,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 127,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 103,
-            "function": "handleRequest",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 55,
-            "function": "handleRequestUsingNamedLimiter",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 103,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 693,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 668,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 634,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 623,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 166,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 128,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/fruitcake\/laravel-cors\/src\/HandleCors.php",
-            "line": 57,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Fruitcake\\Cors\\HandleCors",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 21,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 21,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/PreventRequestsDuringMaintenance.php",
-            "line": 87,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/fruitcake\/laravel-cors\/src\/HandleCors.php",
-            "line": 57,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Fruitcake\\Cors\\HandleCors",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 167,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 103,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 141,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 110,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
-            "line": 323,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
-            "line": 305,
-            "function": "callLaravelOrLumenRoute",
-            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
-            "line": 76,
-            "function": "makeApiCall",
-            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
-            "line": 51,
-            "function": "makeResponseCall",
-            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Strategies\/Responses\/ResponseCalls.php",
-            "line": 41,
-            "function": "makeResponseCallIfEnabledAndNoSuccessResponses",
-            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
-            "line": 235,
-            "function": "__invoke",
-            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
-            "line": 171,
-            "function": "iterateThroughStrategies",
-            "class": "Knuckles\\Scribe\\Extracting\\Generator",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Extracting\/Generator.php",
-            "line": 126,
-            "function": "fetchResponses",
-            "class": "Knuckles\\Scribe\\Extracting\\Generator",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Commands\/GenerateDocumentation.php",
-            "line": 118,
-            "function": "processRoute",
-            "class": "Knuckles\\Scribe\\Extracting\\Generator",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/knuckleswtf\/scribe\/src\/Commands\/GenerateDocumentation.php",
-            "line": 73,
-            "function": "processRoutes",
-            "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 36,
-            "function": "handle",
-            "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Util.php",
-            "line": 40,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 93,
-            "function": "unwrapIfClosure",
-            "class": "Illuminate\\Container\\Util",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 37,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 596,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 136,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 258,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 121,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Application.php",
-            "line": 920,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Application.php",
-            "line": 266,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/symfony\/console\/Application.php",
-            "line": 142,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 93,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 129,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "-&gt;"
-        },
-        {
-            "file": "\/Users\/raci\/codes\/laravelrabbitmq\/producer.test\/src\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "-&gt;"
-        }
-    ]
-}</code></pre>
 <div id="execution-results-GETapi-products--product-" hidden>
     <blockquote>Received response<span id="execution-response-status-GETapi-products--product-"></span>:</blockquote>
     <pre class="json"><code id="execution-response-content-GETapi-products--product-"></code></pre>
@@ -2589,11 +1732,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "http://localhost:8089/api/products/saepe" \
+    "http://localhost:8089/api/products/fuga" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8089/api/products/saepe"
+    "http://localhost:8089/api/products/fuga"
 );
 
 let headers = {
@@ -2640,11 +1783,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "http://localhost:8089/api/products/velit" \
+    "http://localhost:8089/api/products/sint" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8089/api/products/velit"
+    "http://localhost:8089/api/products/sint"
 );
 
 let headers = {

@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Raci's Api Documention",
-        "_postman_id": "c0c7d280-b568-483e-8c73-b581435c0eee",
+        "_postman_id": "4fd0f36b-bd02-47ba-a4b7-868594796746",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -61,7 +61,7 @@
                                 {
                                     "id": "jsonFile",
                                     "key": "jsonFile",
-                                    "value": "sint",
+                                    "value": "tempora",
                                     "description": ""
                                 }
                             ]
@@ -98,7 +98,7 @@
                                 {
                                     "id": "asset",
                                     "key": "asset",
-                                    "value": "placeat",
+                                    "value": "enim",
                                     "description": ""
                                 }
                             ]
@@ -257,7 +257,7 @@
                                 {
                                     "id": "product",
                                     "key": "product",
-                                    "value": "occaecati",
+                                    "value": "maxime",
                                     "description": ""
                                 }
                             ]
@@ -294,7 +294,7 @@
                                 {
                                     "id": "product",
                                     "key": "product",
-                                    "value": "saepe",
+                                    "value": "fuga",
                                     "description": ""
                                 }
                             ]
@@ -331,7 +331,7 @@
                                 {
                                     "id": "product",
                                     "key": "product",
-                                    "value": "velit",
+                                    "value": "sint",
                                     "description": ""
                                 }
                             ]

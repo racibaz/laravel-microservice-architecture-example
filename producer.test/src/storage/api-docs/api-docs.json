@@ -1,0 +1,22 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Api Documention Title",
+        "version": "0.1"
+    },
+    "paths": {
+        "/projects": {
+            "get": {
+                "operationId": "App\\Http\\Controllers\\Api\\ProductController::index",
+                "responses": {
+                    "200": {
+                        "description": "Display a listing of projects."
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}

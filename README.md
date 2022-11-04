@@ -1,11 +1,12 @@
 
 ## About This Project
 
-This project about laravel microservice architecture example with 
+This project about microservice architecture example with 
 docker,
-rabbitmq
+rabbitmq,
+swagger
 and
-swagger.
+laravel.
 
 ### DB Configuration
 
